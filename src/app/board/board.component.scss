@@ -1,0 +1,30 @@
+main, app-square{
+  display: grid;
+  grid-template-columns: repeat(3,200px);
+  height: 200px;
+  grid-gap: 0px;
+  align-self: center;
+}
+
+app-square button{
+  width: 200px;
+  height: 200px;
+
+}
+
+#new{
+  color: rgb(49, 46, 46);
+  width: 200px;
+}
+
+#s{
+  color: rgb(49, 46, 46);
+  height: 200px;
+  width: 200px;
+}
+
+
+
+
+
+

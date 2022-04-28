@@ -1,0 +1,16 @@
+<h1>Current Player: {{ player }}</h1>
+<h2 *ngIf="winner">
+  player {{ winner }} got 3 in a row !!
+</h2>
+<h2 *ngIf=" !winner && turn >= 9">
+Tie!!!
+</h2>
+<button id="new"nbButton hero status="warning" (click)="newGame()">New Game</button>
+
+<main>
+    <app-square
+        *ngFor="let val of squares; let i = index"
+        [value]="val"
+        (click)="makeMove(i)">
+    </app-square>
+</main>
